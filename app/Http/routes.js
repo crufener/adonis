@@ -2,6 +2,6 @@
 
 const Route = use('Route')
 
-Route.on('/').render('home')
+Route.get('/', 'PostsController.index')
 Route.on('/about').render('about')
 Route.on('/contact').render('contact')
